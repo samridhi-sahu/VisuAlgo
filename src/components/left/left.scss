@@ -1,0 +1,75 @@
+
+.left{
+    width: 30%;
+    height: 100%;
+    background-color: #ACCDF0;
+
+
+    h1{
+        font-weight: bold;
+        font-size: 2.25rem;
+        padding-top: 3rem;
+    }
+
+    &__controler{
+       text-align: left;
+       padding: 1em 2em 1em 2em;
+       
+       font-weight: bold;
+
+       div{
+           margin: 0.5em 0em;
+           font-size: 1.5rem;
+
+           span{
+               font-size: 1.5rem; 
+               width: 100%;  
+           }
+
+           input,  select, option{
+               font-size: 1.25rem; 
+               width: 100%;
+               border: 2px solid white;
+               border-radius: 8px;
+               padding-left: 10px;
+               outline-style: none;
+           }
+       }
+    }
+    button{
+        background-color:#293451;
+        font-size: 1.5rem;
+        color: white;
+        padding: 0.5em 1em;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin-top: 1em;
+        transition: font-size 1s;;
+    }
+
+
+    @media (max-width:580px) {
+        width: 100%;
+        height: 30%;
+
+        h1{
+        font-weight: bold;
+        font-size: 1.5rem;
+       }
+
+       &__controler{
+         padding: 0.2em 1.5em 0.25em 1.5em;
+         font-weight: bold;
+        
+         div{
+             font-size: 1.25rem;
+         }
+
+        }
+
+        button{
+            margin: 0.5em;
+        }
+
+    }
+}
